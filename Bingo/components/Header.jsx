@@ -10,7 +10,7 @@ const Header = () => {
 
 const styles = StyleSheet.create({
   container: {
-    height: "10%",
+    height: "15%",
     width: "100%",
     justifyContent: "center",
     alignItems: "center"
@@ -19,7 +19,11 @@ const styles = StyleSheet.create({
     fontSize: 65,
     letterSpacing: 15,
     fontWeight: "700",
-    color: "aqua",
+    // color: "#6FADEC",
+    color: "#fff",
+    textShadowColor: "#000",
+    textShadowOffset: { width: 3, height: 3 },
+    textShadowRadius: 3
   }
 })
 

@@ -26,6 +26,9 @@ const styles = StyleSheet.create({
     borderWidth: 3,
     justifyContent: "center",
     alignItems: "center",
+    padding: 2,
+    borderColor: "#121212"
+
   },
   text: {
     color: "#000",
@@ -33,8 +36,9 @@ const styles = StyleSheet.create({
     fontWeight: '600'
   },
   selected_cell: {
-    backgroundColor: 'aqua',
+    backgroundColor: '#3C91E6',
     borderColor: "#fff",
+    borderWidth: 1
   },
   selected_text: {
     color: "#fff",

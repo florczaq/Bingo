@@ -5,25 +5,35 @@ import * as Storage from "../LocalStorageManager"
 
 
 const bingoTexts = [
-  "Text 0",
-  "Text 1",
-  "Text 2",
-  "Text 3",
-  "Text 4",
-  "Text 5",
-  "Text 6",
-  "Text 7",
-  "Text 8",
-  "Text 9",
-  "Text 10",
-  "Text 11",
-  "Text 12",
-  "Text 13",
-  "Text 14",
-  "Text 15",
+  "Castorama",
+  "Skala ocen od 1 do 5",
+  "Stukanie w biurko",
+  "Ja nikogo nie przekrzycze",
+  "Nowak",
+  "Telefony",
+  "Opierdol",
+  "Zakończyć rozmowy",
+  "Pizda przy tablicy",
+  "Drozd",
+  "To jest przecież proste",
+  "Karty wzorów",
+  "Łopata",
+  "Nikt nie pytał",
+  "Ciszej bądź jeden z drugim",
+  "Kto ci pozwolił mówić",
 ]
 
 
+/**
+ * "Co się dzieje z Kawalcem",
+ * "To nie koncert życzeń",
+ * "Skeretariat i papiery",
+ * "Rozumiecie? (nie) To idziemy dalej"
+ * "Ucisza tego co nie trzeba",
+ * "Nic się nie uczycie",
+ * "Czy ja komuś przeszkadzam",
+ * '"Fajne","proste" zadanko'
+ */
 const RenderCell = ({ selectedCells = [], onCellClick }) => {
   return <>
     {
@@ -54,7 +64,6 @@ class Cells extends React.Component {
   componentDidMount = () => {
     Storage.readData(storageKey).then(res => {
       this.setState({ selectedCells: res || [] })
-      console.log(res)
     }).catch(err => {
       console.log(err);
       this.setState({ selectedCells: [] })
@@ -124,6 +133,7 @@ const styles = StyleSheet.create({
     flexWrap: "wrap",
     marginVertical: 20,
     borderWidth: 4,
+    borderColor: "#121212"
   }
 });
 export default Cells;

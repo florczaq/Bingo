@@ -8,8 +8,10 @@ const WinModal = ({ onClick }) => {
   >
     <View style={styles.centerModal}>
       <View style={styles.container}>
-        <Text style={styles.text}>BINGO</Text>
-        <Image source={DancingCat} style={styles.image} />
+        <Text style={styles.text}>BINGO!</Text>
+        <View style={styles.imageContainer}>
+          <Image source={DancingCat} style={styles.image} />
+        </View>
         <TouchableOpacity style={styles.button} onPress={onClick}>
           <Text style={styles.buttonText}>AWESOME!</Text>
         </TouchableOpacity>
@@ -30,16 +32,16 @@ const styles = StyleSheet.create({
     alignItems: "center",
     width: "90%",
     height: "90%",
-    backgroundColor: "lightblue",
+    backgroundColor: "#30384F",
     padding: 10,
-    borderWidth: 10,
-    borderColor: "#444",
-    borderRadius: 40
+    borderWidth: 5,
+    borderColor: "#121212",
+    borderRadius: 20
   },
   text: {
     color: "#fff",
     fontSize: 70,
-    height: '20%',
+    height: '15%',
     width: '100%',
     textAlign: "center",
     fontWeight: "800",
@@ -49,12 +51,20 @@ const styles = StyleSheet.create({
     textShadowRadius: 3,
   },
   image: {
-    width: "90%",
-    height: "40%",
+    width: "100%",
+    height: "100%",
     elevation: 6,
   },
+  imageContainer: {
+    backgroundColor: "#121212",
+    width: "100%",
+    height: "40%",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: 3
+  },
   button: {
-    backgroundColor: "lime",
+    backgroundColor: "#6FADEC",
     width: '70%',
     height: 90,
     justifyContent: "center",
@@ -72,6 +82,5 @@ const styles = StyleSheet.create({
     textShadowRadius: 3
   }
 })
-
 
 export default WinModal;
