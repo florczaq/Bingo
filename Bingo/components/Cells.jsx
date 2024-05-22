@@ -5,35 +5,24 @@ import * as Storage from "../LocalStorageManager"
 
 
 const bingoTexts = [
-  "Castorama",
-  "Skala ocen od 1 do 5",
-  "Stukanie w biurko",
-  "Ja nikogo nie przekrzycze",
-  "Nowak",
-  "Telefony",
-  "Opierdol",
-  "Zakończyć rozmowy",
-  "Pizda przy tablicy",
-  "Drozd",
-  "To jest przecież proste",
-  "Karty wzorów",
-  "Łopata",
-  "Nikt nie pytał",
-  "Ciszej bądź jeden z drugim",
-  "Kto ci pozwolił mówić",
+  "haslo1",
+  "haslo2",
+  "haslo3",
+  "haslo4",
+  "haslo5",
+  "haslo6",
+  "haslo7",
+  "haslo8",
+  "haslo9",
+  "haslo10",
+  "haslo11",
+  "haslo12",
+  "haslo13",
+  "haslo14",
+  "haslo15",
+  "haslo16",
 ]
 
-
-/**
- * "Co się dzieje z Kawalcem",
- * "To nie koncert życzeń",
- * "Skeretariat i papiery",
- * "Rozumiecie? (nie) To idziemy dalej"
- * "Ucisza tego co nie trzeba",
- * "Nic się nie uczycie",
- * "Czy ja komuś przeszkadzam",
- * '"Fajne","proste" zadanko'
- */
 const RenderCell = ({ selectedCells = [], onCellClick }) => {
   return <>
     {
